@@ -1,0 +1,14 @@
+# Copy this file to terraform.tfvars and fill in your values
+
+cloudflare_api_token  = "your-cloudflare-api-token"
+cloudflare_account_id = "your-cloudflare-account-id"
+
+# Worker configuration
+worker_name       = "demo-worker"
+kv_namespace_name = "demo-kv-namespace"
+
+# Pages configuration
+pages_project_name = "demo-pages"
+github_repo_owner  = "your-github-username"
+github_repo_name   = "your-repo-name"
+production_branch  = "main"
