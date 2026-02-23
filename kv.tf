@@ -8,6 +8,6 @@ resource "cloudflare_workers_kv_namespace" "demo_kv" {
 resource "cloudflare_workers_kv" "demo_entry" {
   account_id   = var.cloudflare_account_id
   namespace_id = cloudflare_workers_kv_namespace.demo_kv.id
-  key          = "greeting"
-  value        = "Hello from Cloudflare KV!"
+  key          = "test_key"
+  value        = "test_value"
 }

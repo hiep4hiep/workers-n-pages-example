@@ -2,6 +2,7 @@
 
 cloudflare_api_token  = "your-cloudflare-api-token"
 cloudflare_account_id = "your-cloudflare-account-id"
+cloudflare_zone_id    = "your-cloudflare-zone-id"
 
 # Worker configuration
 worker_name       = "demo-worker"

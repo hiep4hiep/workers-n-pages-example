@@ -42,3 +42,8 @@ variable "production_branch" {
   type        = string
   default     = "main"
 }
+
+variable "cloudflare_zone_id" {
+  description = "Cloudflare Zone ID for hiepprolab.info"
+  type        = string
+}
