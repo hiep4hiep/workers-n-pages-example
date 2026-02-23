@@ -39,7 +39,7 @@ resource "cloudflare_pages_project" "demo_pages" {
 resource "cloudflare_pages_domain" "custom_domain" {
   account_id   = var.cloudflare_account_id
   project_name = cloudflare_pages_project.demo_pages.name
-  domain       = "test.customdomain"
+  domain       = "<custom domain>"
 }
 
 # DNS CNAME record pointing to Pages project

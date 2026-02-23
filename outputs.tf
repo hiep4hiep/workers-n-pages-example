@@ -13,17 +13,17 @@ output "worker_url" {
   value       = "https://${var.worker_name}.${var.cloudflare_account_id}.workers.dev"
 }
 
-#output "pages_project_name" {
-#  description = "Name of the Pages project"
-#  value       = cloudflare_pages_project.demo_pages.name
-#}
+output "pages_project_name" {
+  description = "Name of the Pages project"
+  value       = cloudflare_pages_project.demo_pages.name
+}
 
-#output "pages_url" {
-#  description = "URL of the Pages deployment"
-#  value       = "https://${cloudflare_pages_project.demo_pages.subdomain}"
-#}
+output "pages_url" {
+  description = "URL of the Pages deployment"
+  value       = "https://${cloudflare_pages_project.demo_pages.subdomain}"
+}
 
-#output "pages_subdomain" {
-#  description = "Pages subdomain"
-#  value       = cloudflare_pages_project.demo_pages.subdomain
-#}
+output "pages_subdomain" {
+  description = "Pages subdomain"
+  value       = cloudflare_pages_project.demo_pages.subdomain
+}
