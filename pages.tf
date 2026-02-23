@@ -39,13 +39,13 @@ resource "cloudflare_pages_project" "demo_pages" {
 resource "cloudflare_pages_domain" "custom_domain" {
   account_id   = var.cloudflare_account_id
   project_name = cloudflare_pages_project.demo_pages.name
-  domain       = "<custom domain>"
+  domain       = var.custom_domain_1
 }
 
 # DNS CNAME record pointing to Pages project
 resource "cloudflare_record" "pages_cname" {
   zone_id = var.cloudflare_zone_id
-  name    = "testpage"
+  name    = split(".", var.custom_domain_1)[0]
   content = cloudflare_pages_project.demo_pages.subdomain
   type    = "CNAME"
   proxied = true

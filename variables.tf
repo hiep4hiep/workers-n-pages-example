@@ -47,3 +47,8 @@ variable "cloudflare_zone_id" {
   description = "Cloudflare Zone ID for hiepprolab.info"
   type        = string
 }
+
+variable "custom_domain_1" {
+  description = "Custom domain for Pages project"
+  type        = string
+}
