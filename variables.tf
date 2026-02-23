@@ -44,7 +44,7 @@ variable "production_branch" {
 }
 
 variable "cloudflare_zone_id" {
-  description = "Cloudflare Zone ID for hiepprolab.info"
+  description = "Cloudflare Zone ID for the custom domain"
   type        = string
 }
 
